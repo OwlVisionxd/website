@@ -1,0 +1,513 @@
+@import url('https:/*fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.list-counter-circle {
+    list-style: none;
+    counter-reset: list;
+    /* инициализация счетчика */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Отображается только область внутри элемента, остальное будет скрыто. */
+}
+
+#largertext {
+    font-size: 1.5rem;
+    /* задаёт размер относительно размера шрифта элемента */
+}
+
+
+.list-counter-circle>li {
+    position: relative;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 1.75rem;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    color: #fff;
+    background: #8dc6ff;
+    white-space: nowrap;
+    /* пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой */
+    border-radius: .25rem;
+}
+
+.list-counter-circle>li:last-child {
+    margin-bottom: 0;
+}
+
+body {
+    background-color: #e3dfdb;
+    font-family: 'Roboto', sans-serif;
+}
+
+#center {
+    text-align: center;
+    align-content: center;
+    margin-top: 100px;
+}
+
+#jumb {
+    margin-top: 80px;
+    background-color: #e3dfdb;
+}
+
+#m_center {
+    background-color: red;
+    text-align: center;
+    align-content: center;
+    margin-top: 80px;
+}
+
+#jumbik {
+    margin-top: 250px;
+    border-radius: 62px;
+}
+
+#x1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    display: block;
+    /* Элемент показывается как блочный. */
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    height: auto;
+}
+
+.navbar-custom {
+    background-color: #26272b;
+}
+
+h1 {
+    font-size: larger;
+    text-align: center;
+}
+
+.description {
+    padding-left: 0;
+    list-style: none;
+    /* без маркера*/
+    display: block;
+    /* Элемент показывается как блочный*/
+    color: white;
+}
+
+.description_sec {
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    color: white;
+    text-align: right;
+}
+
+.description a:active,
+.description a:focus,
+.description a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.jumbotron {
+    height: 400px;
+}
+
+.fas {
+    display: inline-flex !important;
+    /* элемент как флексбокс, а его дочерниие элементы — как flex-элементы*/
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    /* цвет, стиль и толщина внешней границы на всех четырех сторонах элемента*/
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+    /* переход начинается медленно, разгоняется быстро и замедляется в конце*/
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    /*Сдвигает элемент на новое место, перемещая относительно обычного положения вправо и вниз*/
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    /* уровень прозрачности элемента*/
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    /*Сдвигает элемент на новое место, перемещая относительно обычного положения вправо и вниз*/
+    transition: ease all .2s;
+}
+
+.sec-accent {
+    background-color: #fafcf5;
+}
+
+.blue {
+    background-color: #778899;
+}
+
+.container {
+    width: 100%;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+    /* уровень прозрачности элемента*/
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+        /* блочный элемент, который обтекается другими элементами веб-страницы*/
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    /* webkit - браузеры Chrome, Safari, Opera;*/
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+            /* насыщенность шрифта*/
+    }
+}
+
+div.scrollup {
+    position: fixed;
+    /* фиксированная позиция */
+    color: #fff;
+    /* цвет текста */
+    background-color: #286090;
+    /* цвет заднего фона */
+    right: 20px;
+    /* расстояние от правого края */
+    bottom: 0px;
+    /* расстояние от нижнего края */
+    padding: 4px 10px;
+    /* отступы до содержимого блока */
+    font-size: 20px;
+    /* размер шрифта (иконки) */
+    border-top-left-radius: 4px;
+    /* скругление верхнего левого угла */
+    border-top-right-radius: 4px;
+    /* скругление верхнего правого угла */
+    cursor: pointer;
+    /* форма курсора */
+    display: none;
+    /* не отображать элемент */
+    text-align: center;
+    /*выравнивание содержимого элемента по центру */
+}
+
+div.scrollup:hover {
+    background-color: #000;
+    /* цвет заднего фона при наведении */
+}
+
+.contact-form {
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 14%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color, color 1s ease-out;
+    -webkit-transition: background-color, 1s ease-out;
+    -moz-transition: background-color, 1s ease-out;
+    /* moz - mozilla firefox*/
+    -o-transition: background-color, 1s ease-out;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0062cc;
+    color: #fff;
+}
+
+nav.navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+    left: 0;
+    top: 35px;
+    z-index: 999;
+    padding-top: 2px;
+    margin: auto;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
